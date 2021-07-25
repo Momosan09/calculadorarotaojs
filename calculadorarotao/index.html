@@ -9,12 +9,13 @@
 
     <form action="" id="form">
 
-        <input type="text" name="Medida_tela" id="first" placeholder="Medida tela en centimetros"> <br>
-        <input type="radio" name="modelo" id="second"> <br>
-        <input type="radio" name="modelo" id="second"> <br>
+        <input type="number" name="Medida_tela" id="first" placeholder="Medida en centimetros" required="required" min="1" > <br>
+        <input type="radio" value="100" name="modelo" id="second"> <br>
+        <input type="radio" value="200" name="modelo" id="second"> <br>
 
-        <input type="text" name="Precio_tela" id="last" placeholder="Valor de la tela"> <br>
+        <input type="number" name="Precio_tela" id="last" placeholder="Precio tela" min="1"> <br> 
         <button type="button" onclick="getData()" > Calcular</button>
+        <input type="reset" value="Borrar">
 
         
 
