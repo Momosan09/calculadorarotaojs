@@ -9,15 +9,31 @@
     
     <form action="">
 
-        <label for="first"> Medida Tela</label><br>
+        <label for="first"> Medida Tela</label><br> <!-- medida de la tela -->
         <input type="number" min="1" name="Medida_tela" id="first" placeholder="Medida en centimetros">
 
+        <!-- Tipos de modelo -->
+        <br><br>
         <input type="radio" name="modelos" id="americano">
         <input type="radio" name="modelos" id="presilla"><br><br>
 
+        <!-- precio de paños -->
+        <input type="number" min="1" name="Precio_paños" id="third" placeholder="Precio de un paño" >
+        
+        <!-- Numero de paños -->
+        <select id="four">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
 
-        <input type="number" min="1" name="Precio_paños" id="third" placeholder="Precio de los paños" >
-        <button type="button" onclick="ShowData()" > Calcular</button>
+        </select>
+        <br><br>
+        <input type="number" min="1" name="Precio_tela" id="last" placeholder="Precio de la tela">
+        
+        <button type="button" onclick="ShowData()" > Calcular </button>
         <input type="reset" value="Borrar">
 
 
