@@ -2,6 +2,8 @@ let ShowData = function (){
 
     let First = parseInt( document.getElementById("first").value);
 
+    let Third = parseInt( document.getElementById("third").value);
+
     let M1 = document.getElementById("americano").checked;
 
     let M2 = document.getElementById("presilla").checked;
@@ -17,11 +19,33 @@ let ShowData = function (){
         console.log("!"+presilla);
     }
 
+    let resultado = First;
 
-let resultado = First
-    console.log(resultado);
+    console.log("------Medida de la tela------");
+
+    console.log(First + "cm");
+
+    console.log("------Medida de la tela------");
+
+    console.log("*****************************");
+
+    console.log("----Estado de los modelos----");
+    
     console.log(M1);
+
     console.log(M2);
+
+    console.log("----Estado de los modelos----");
+
+    console.log("*****************************");
+
+    console.log("-----Precio de los paños-----");
+
+    console.log("$"+Third);
+
+    console.log("-----Precio de los paños-----");
+
+
 
 
     document.getElementById("info").innerHTML= First;
