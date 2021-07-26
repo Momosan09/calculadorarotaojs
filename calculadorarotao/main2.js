@@ -27,7 +27,7 @@ let ShowData = function (){
         let tela_total = First_redondeado * 2.5;
         Total = (tela_total * Last) + Costurera;
 
-        console.log("------Medida de la tela------");
+        console.log("------Cantidad de tela------");
         console.log( First_redondeado * 2.5 + "Mts");
         console.log("*****************************");
         console.log("--------Modelo elegido-------");
@@ -47,14 +47,13 @@ let ShowData = function (){
         console.log("------Total------");
         console.log("$ "+ Total); 
 
-        document.getElementById("info0").innerHTML= "Tamaño total de la tela= " + First_redondeado * 2.5 + "Mts";
+        document.getElementById("info0").innerHTML= "Cantidad de tela= " + First_redondeado * 2.5 + "Mts";
         document.getElementById("info1").innerHTML= "Modelo elegido= " + modelo;
         document.getElementById("info2").innerHTML= "Precio de un solo paño= " + "$" + Third;
         document.getElementById("info3").innerHTML= "Numero de paños= " + Four;
         document.getElementById("info4").innerHTML= "Pagar a la costurera= " + "$" + Costurera;
         document.getElementById("info5").innerHTML= "Valor de la tela ingresado= " +"$" + Last;
         document.getElementById("info6").innerHTML= "Total= " + "$" + Total;
-
 
     }
 
@@ -63,7 +62,7 @@ let ShowData = function (){
         let tela_total= First_redondeado * 3;
         Total = (tela_total * Last) + Costurera;
 
-        console.log("------Medida de la tela------");
+        console.log("------Cantidad de tela------");
         console.log( First_redondeado * 3 + "Mts");
         console.log("*****************************");
         console.log("--------Modelo elegido-------");
@@ -83,7 +82,7 @@ let ShowData = function (){
         console.log("------Total------");
         console.log("$ "+ Total); 
 
-        document.getElementById("info0").innerHTML= "Tamaño total de la tela= " + First_redondeado * 3 + "Mts";
+        document.getElementById("info0").innerHTML= "Cantidad de tela= " + First_redondeado * 3 + "Mts";
         document.getElementById("info1").innerHTML= "Modelo elegido= " + modelo;
         document.getElementById("info2").innerHTML= "Precio de un solo paño= " + "$" + Third;
         document.getElementById("info3").innerHTML= "Numero de paños= " + Four;

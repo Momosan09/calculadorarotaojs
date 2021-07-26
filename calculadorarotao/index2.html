@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--     <link rel="stylesheet" href="/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css"> 
     <link rel="stylesheet" href="Style.css">
     <title>Document</title>
 </head>
@@ -12,11 +12,16 @@
 
     <form action="">
 
-        <label for="first"> Medida de la tela</label><br> <!-- medida de la tela -->
+        <label for="first"> Medida de la tela <span><a href="" title="La medida de la tela tiene que ser en centimetros (Metros * 100 = cm)">(?)</a> </span></label> <br><br> <!-- medida de la tela -->
         <input type="number" min="1" name="Medida_tela" id="first" placeholder="Medida en centimetros">
 
         <!-- Tipos de modelo -->
         <br><br>
+
+        <p>Modelos:</p>
+        <div class="Modelos">
+
+            
         <label for="americano">Americano</label>
         <input type="radio" name="modelos" id="americano">
 
@@ -35,11 +40,11 @@
 
         <label for="presilla">Presilla</label>
         <input type="radio" name="modelos" disabled id="presilla"><br><br>
-
-
+        
+        </div>
 
         <!-- precio de paños -->
-        <label for="Precio_paños">Precio de un solo paño</label><br>
+        <label for="Precio_paños">Precio de un solo paño</label> <span> <a href="" title="Ingresar el precio de un solo paño, luego la cantidad de paños.">(?)</a> </span> <br>
         <input type="number" min="1" name="Precio_paños" id="third" placeholder="Precio de un paño" >
         
         <!-- Numero de paños -->
@@ -57,10 +62,11 @@
         <label for="Precio_tela">Precio de la tela</label><br>
         <input type="number" min="1" name="Precio_tela" id="last" placeholder="Precio de la tela">
         
-        <button type="button" onclick="ShowData()" > Calcular </button>
-        <input type="reset" value="Borrar">
-
+        <button type="button" onclick="ShowData()" class="btn btn-primary" > Calcular </button>
+        <input type="reset" value="Borrar" class="btn btn-outline-danger" >
+<a href="" title="NaN hace refernecia a que algun campo no fue rellenado y por lo tanto no es un numero, para resolver esto, revisar el formulario y completarlo">(¿NaN?)</a>
 <section class="Adentro">
+
     <div class="tabla1" id="info0"></div>
     <div class="tabla" id="info1"></div>
     <div class="tabla1" id="info2"></div>
@@ -68,7 +74,7 @@
     <div class="tabla1" id="info4"></div>
     <div class="tabla" id="info5"></div>
     <div class="tabla0" id="info6"></div>
-
+    <div class="Para_NaN" id="if_NaN"></div>
 </section>
 
     </form>

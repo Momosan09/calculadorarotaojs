@@ -6,7 +6,7 @@ body{
 
 .Formulario{
     border: black solid 1px;
-    zoom: 2;
+    zoom: 1.6;
     display: flex;
     justify-content: center;
 }
@@ -18,17 +18,46 @@ body{
 }
 
 .tabla{
-    background-color: red;
+    background-color: rgba(233, 27, 27, 0.8);
 
-    filter: alpha(opacity=60);
 
 }
 
 .tabla1{
+    
+    background-color: rgba(228, 238, 230, 0.7);
 
 
 }
 
 .tabla0{
+
+    background-color: rgba(12, 238, 50, 0.6);
+
+
+
+}
+
+
+.Modelos{
+
+    
+    background-color: gainsboro;
+    width: 40vh;
+    height: 20vh;
+    overflow: scroll;
+    overflow-x: hidden;
+/* 
+    box-shadow: rgb(192, 192, 192) 1px 2px 2px 3px; */
+}
+
+p{
+    text-decoration-line: underline;
+}
+
+
+input{
+    border-radius: 9px;
+    border: solid 1px gray;
 
 }
