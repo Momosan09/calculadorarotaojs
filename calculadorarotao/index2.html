@@ -9,18 +9,23 @@
     
     <form action="">
 
-        <label for="first"> Medida Tela</label><br> <!-- medida de la tela -->
+        <label for="first"> Medida de la tela</label><br> <!-- medida de la tela -->
         <input type="number" min="1" name="Medida_tela" id="first" placeholder="Medida en centimetros">
 
         <!-- Tipos de modelo -->
         <br><br>
+        <label for="americano">Americano</label>
         <input type="radio" name="modelos" id="americano">
+
+        <label for="presilla">Presilla</label>
         <input type="radio" name="modelos" id="presilla"><br><br>
 
         <!-- precio de paños -->
+        <label for="Precio_paños">Precio de un solo paño</label><br>
         <input type="number" min="1" name="Precio_paños" id="third" placeholder="Precio de un paño" >
         
         <!-- Numero de paños -->
+        <label for="four">Numero de paños</label>
         <select id="four">
             <option value="1">1</option>
             <option value="2">2</option>
@@ -31,6 +36,7 @@
 
         </select>
         <br><br>
+        <label for="Precio_tela">Precio de la tela</label><br>
         <input type="number" min="1" name="Precio_tela" id="last" placeholder="Precio de la tela">
         
         <button type="button" onclick="ShowData()" > Calcular </button>
