@@ -8,7 +8,7 @@ let ShowData = function (){
 
     let Last = parseInt( document.getElementById("last").value);
 
-    let Costurera = Four * Last;
+    let Costurera = Four * Third;
 
     //Esta va para el profe
     let Total = (First * Last) + Costurera; 
@@ -20,7 +20,7 @@ let ShowData = function (){
 
 
     if(M1 ==  true){
-       americano = First * 1.5;
+       americano = First * 2.5;
         console.log("!"+americano);
     }
 
