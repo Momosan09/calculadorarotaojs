@@ -10,13 +10,17 @@
     <form action="">
 
         <label for="first"> Medida Tela</label><br>
-        <input type="number" min="1" name="Medida_tela" id="first">
+        <input type="number" min="1" name="Medida_tela" id="first" placeholder="Medida en centimetros">
 
         <input type="radio" name="modelos" id="americano">
         <input type="radio" name="modelos" id="presilla">
 
         <button type="button" onclick="ShowData()" > Calcular</button>
+        <input type="reset" value="Borrar">
 
+
+        <div id="info">
+        </div>
     </form>
 
     <script src="/main2.js"> </script>
