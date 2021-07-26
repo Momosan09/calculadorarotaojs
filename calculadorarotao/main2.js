@@ -2,6 +2,8 @@ let ShowData = function (){
 
     let First = parseInt( document.getElementById("first").value);
 
+    let First_redondeado = First / 100;
+
     let Third = parseInt( document.getElementById("third").value);
 
     let Four = document.getElementById("four").value;
@@ -10,8 +12,6 @@ let ShowData = function (){
 
     let Costurera = Four * Third;
 
-    //Esta va para el profe
-    let Total = (First * Last) + Costurera; 
 
     /* Modelos */
     let M1 = document.getElementById("americano").checked;
@@ -20,8 +20,9 @@ let ShowData = function (){
 
 
     if(M1 ==  true){
-       americano = First * 2.5;
-        console.log("!"+americano);
+        let tela_total = First_redondeado * 2.5;
+        let Total = (tela_total * Last) + Costurera;
+        console.log("!"+ Total);
     }
 
     if(M2 == true){
@@ -32,7 +33,7 @@ let ShowData = function (){
 
     console.log("------Medida de la tela------");
 
-    console.log(First + "cm");
+    console.log(First_redondeado + "Mts");
 
     console.log("*****************************");
 
@@ -70,7 +71,9 @@ let ShowData = function (){
 
     console.log("------Total------");
 
-    console.log(Total);
+/*     let Total = (tela_total * Last) + Costurera; 
+
+    console.log(Total); */
 
 
     document.getElementById("info").innerHTML= First;
