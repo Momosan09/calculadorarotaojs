@@ -10,6 +10,8 @@ let ShowData = function (){
 
     let Costurera = Four * Last;
 
+    //Esta va para el profe
+    let Total = (First * Last) + Costurera; 
 
     /* Modelos */
     let M1 = document.getElementById("americano").checked;
@@ -27,7 +29,6 @@ let ShowData = function (){
         console.log("!"+presilla);
     }
 
-    let resultado = First;
 
     console.log("------Medida de la tela------");
 
@@ -65,6 +66,11 @@ let ShowData = function (){
 
     console.log("$" + Last);
 
+    console.log("*****************************");
+
+    console.log("------Total------");
+
+    console.log(Total);
 
 
     document.getElementById("info").innerHTML= First;
