@@ -1,0 +1,34 @@
+body{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.Formulario{
+    border: black solid 1px;
+    zoom: 2;
+    display: flex;
+    justify-content: center;
+}
+
+
+.Adentro{
+    border: solid black 1px;
+    margin-top: 20px;
+}
+
+.tabla{
+    background-color: red;
+
+    filter: alpha(opacity=60);
+
+}
+
+.tabla1{
+
+
+}
+
+.tabla0{
+
+}

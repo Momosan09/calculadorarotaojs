@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--     <link rel="stylesheet" href="/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="Style.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <section class="Formulario">
+
     <form action="">
 
         <label for="first"> Medida de la tela</label><br> <!-- medida de la tela -->
@@ -19,6 +22,21 @@
 
         <label for="presilla">Presilla</label>
         <input type="radio" name="modelos" id="presilla"><br><br>
+
+
+        <label for="americano">Americano</label>
+        <input type="radio" name="modelos" disabled id="americano">
+
+        <label for="presilla">Presilla</label>
+        <input type="radio" name="modelos" disabled id="presilla"><br><br>
+
+        <label for="americano">Americano</label>
+        <input type="radio" name="modelos" disabled id="americano">
+
+        <label for="presilla">Presilla</label>
+        <input type="radio" name="modelos" disabled id="presilla"><br><br>
+
+
 
         <!-- precio de paños -->
         <label for="Precio_paños">Precio de un solo paño</label><br>
@@ -42,21 +60,22 @@
         <button type="button" onclick="ShowData()" > Calcular </button>
         <input type="reset" value="Borrar">
 
-<section>
-    <div id="info0"></div>
-    <div id="info1"></div>
-    <div id="info2"></div>
-    <div id="info3"></div>
-    <div id="info4"></div>
-    <div id="info5"></div>
-    <div id="info6"></div>
+<section class="Adentro">
+    <div class="tabla1" id="info0"></div>
+    <div class="tabla" id="info1"></div>
+    <div class="tabla1" id="info2"></div>
+    <div class="tabla" id="info3"></div>
+    <div class="tabla1" id="info4"></div>
+    <div class="tabla" id="info5"></div>
+    <div class="tabla0" id="info6"></div>
 
 </section>
 
-
     </form>
 
+</section>
     <script src="/main2.js"> </script>
+    <script src="/js/bootstrap.min.js"></script>
 
 </body>
 </html>
