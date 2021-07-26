@@ -44,6 +44,21 @@ let ShowData = function (){
         console.log("------Total------");
         console.log("$ "+ Total); 
 
+        document.getElementById("info").innerHTML= "Tamaño total de la tela= " + First_redondeado * 2.5 + "Mts";
+        document.getElementById("info").innerHTML= "Valor de la tela ingresado= " +"$" + Last;
+        document.getElementById("info").innerHTML= "Modelo elegido= " + M1;
+        document.getElementById("info").innerHTML= "Precio de un solo paño= " + "$" + Third;
+        document.getElementById("info").innerHTML= "Numero de paños= " + Four;
+        document.getElementById("info").innerHTML= "Coste de la costurera= " + Costurera;
+        document.getElementById("info").innerHTML= "Total= " + "$" + Total;
+
+
+
+        
+
+
+
+
     }
 
     if(M2 == true){
@@ -69,11 +84,14 @@ let ShowData = function (){
         console.log("*****************************");
         console.log("------Total------");
         console.log("$ "+ Total); 
+
+
+
     }
 
 
 
-    document.getElementById("info").innerHTML= First;
+
 
 }
 
