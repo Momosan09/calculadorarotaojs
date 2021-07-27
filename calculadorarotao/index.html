@@ -3,79 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="Style.css">
     <title>Document</title>
 </head>
 <body>
+    <section class="Formulario">
 
-    <form action="" id="form">
+    <div class="container-formulario">  
 
-        <input type="number" name="Medida_tela" id="first" placeholder="Medida en centimetros" required="required" min="1" > <br>
-        <label for="second"><input type="radio"  name="modelo"  id="second" value="100"> 100</label> <br>
-        <label for="seconds"><input type="radio"  name="modelo"  id="seconds" value="200"> 200</label> <br>
+    <form action="" class="formulario">
 
-        <input type="number" name="Precio_tela" id="last" placeholder="Precio tela" min="1"> <br> 
-        <button type="button" onclick="getData()" > Calcular</button>
-        <input type="reset" value="Borrar">
+        <label for="first"> Medida de la tela <span><a href="" title="La medida de la tela tiene que ser en centimetros (Metros * 100 = cm)">(?)</a> </span></label> <br><br> <!-- medida de la tela -->
+        <input type="number" min="1" name="Medida_tela" id="first" placeholder="Medida en centimetros">
 
-    
+        <!-- Tipos de modelo -->
+        <br><br>
+
+        <p>Modelos:</p>
+        <div class="Modelos">
+
+            
+        <label for="americano">Americano</label>
+        <input type="radio" name="modelos" id="americano">
+
+        <label for="presilla">Presilla</label>
+        <input type="radio" name="modelos" id="presilla"><br><br>
+
+
+        <label for="americano">Americano</label>
+        <input type="radio" name="modelos" disabled id="americano">
+
+        <label for="presilla">Presilla</label>
+        <input type="radio" name="modelos" disabled id="presilla"><br><br>
+
+        <label for="americano">Americano</label>
+        <input type="radio" name="modelos" disabled id="americano">
+
+        <label for="presilla">Presilla</label>
+        <input type="radio" name="modelos" disabled id="presilla"><br><br>
+        
+        </div>
+
+        <!-- precio de paños -->
+        <label for="Precio_paños">Precio de un solo paño</label> <span> <a href="" title="Ingresar el precio de un solo paño, luego la cantidad de paños.">(?)</a> </span> <br>
+        <input type="number" min="1" name="Precio_paños" id="third" placeholder="Precio de un paño" >
+        
+        <!-- Numero de paños -->
+        <label for="four">Numero de paños</label>
+        <select id="four">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+
+        </select>
+        <br><br> 
+        <label for="Precio_tela">Precio de la tela</label><br>
+        <input type="number" min="1" name="Precio_tela" id="last" placeholder="Precio de la tela">
+        <br><br>
+        <button type="button" onclick="ShowData()" class="btn btn-primary" > Calcular </button>
+        <input type="reset" value="Borrar" class="btn btn-outline-danger" >
+<a href="" title="NaN hace refernecia a que algun campo no fue rellenado y por lo tanto no es un numero, para resolver esto, revisar el formulario y completarlo">(¿NaN?)</a>
+<section class="Adentro">
+
+    <div class="tabla1" id="info0"></div>
+    <div class="tabla" id="info1"></div>
+    <div class="tabla1" id="info2"></div>
+    <div class="tabla" id="info3"></div>
+    <div class="tabla1" id="info4"></div>
+    <div class="tabla" id="info5"></div>
+    <div class="tabla0" id="info6"></div>
+    <div class="Para_NaN" id="if_NaN"></div>
+
+</div>  
+
+</section>
+
     </form>
 
-
-
-
-<!-- <form action="">
-    <fieldset><legend>Diseño</legend>
-    
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, tempore.<input value="50"  type="radio"  name="op1" ></p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, tempore.<input value="100"  type="radio"  name="op1" ></p>
-
-    </fieldset>
-    <fieldset><legend>Tienda</legend>
-    
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, tempore.<input value="55"  type="radio"  name="op2" ></p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, tempore.<input value="105"  type="radio"  name="op2" ></p>
-
-    </fieldset>
-    <fieldset><legend>Membership</legend>
-    
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, tempore.<input value="90"  type="radio"  name="op3" ></p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, tempore.<input value="130"  type="radio"  name="op3" ></p>
-
-    </fieldset>    
-</form>
-
-<div class="resultado"> 
-
-</div> -->
+</section>
+    <script src="/main.js"> </script>
+    <script src="/js/bootstrap.min.js"></script>
 
 </body>
-
-
-
-<script src="/main.js"> </script>
-
-<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-<script>
-    $(function(){
-        $("input[type=radio").click(function(){
-            calcular();
-        })
-    });
-
-    function calcular (){
-        $radios = $("input[type=radio]:checked");
-        var coste_total = 0;
-
-        $radios.each(function(){
-            coste_total = coste_total + parseInt( $(this).val());
-            //alert($(this).val());
-        });
-        //alert(coste_total);
-        $(".resultado").html(coste_total)
-
-    }
-
-</script> -->
-
 </html>
