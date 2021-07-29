@@ -15,7 +15,7 @@
     <form action="" class="formulario">
 
         <label for="first"> Espacio que ocupa la tela <span><a href="" title="La medida de la tela tiene que ser en centimetros (Metros * 100 = cm)">(?)</a> </span></label> <br><br> <!-- medida de la tela -->
-        <input type="number" min="1" name="Medida_tela" id="first" placeholder="Espacio en centimetros">
+        <label class="medida"><input type="number" min="1" name="Medida_tela" id="first" placeholder="Espacio en centimetros">cm</label>
 
         <!-- Tipos de modelo -->
         <br><br>
@@ -46,10 +46,10 @@
 
         <!-- precio de paños -->
         <label for="Precio_paños">Precio de un solo paño</label> <span> <a href="" title="Ingresar el precio de un solo paño, luego la cantidad de paños.">(?)</a> </span> <br>
-        <input type="number" min="1" name="Precio_paños" id="third" placeholder="Precio de un paño" >
+        <label class="pesos">$<input type="number" min="1" name="Precio_paños" id="third" placeholder="Precio de un paño" ></label>
         
         <!-- Numero de paños -->
-        <label for="four">Numero de paños</label>
+      <!--   <label for="four">Numero de paños</label>
         <select id="four">
             <option value="1">1</option>
             <option value="2">2</option>
@@ -58,10 +58,10 @@
             <option value="5">5</option>
             <option value="6">6</option>
 
-        </select>
+        </select> -->
         <br><br> 
         <label for="Precio_tela">Precio de la tela</label><br>
-        <input type="number" min="1" name="Precio_tela" id="last" placeholder="Precio de la tela">
+        <label class="pesos">$<input type="number" min="1" name="Precio_tela" id="last" placeholder="Precio de la tela"></label>
         <br><br>
         <button type="button" onclick="ShowData()" class="btn btn-primary" > Calcular </button>
         <input type="reset" value="Borrar" class="btn btn-outline-danger" >
