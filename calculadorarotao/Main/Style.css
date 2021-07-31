@@ -93,7 +93,14 @@ input{
 
 }
 
+.link-nav{
+    display: flex;
+    justify-content: space-between;
+}
 
+img{
+    padding:10px;
+}
 
 
 @media (max-width: 700px){
