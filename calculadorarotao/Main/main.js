@@ -33,7 +33,7 @@ let ShowData = function (){
 
     let M5 = document.getElementById("vanesa_doble").checked;
 
-    let M6 = document.getElementById("tablas_chatas").checkeround
+    let M6 = document.getElementById("tablas_chatas").checked;
 
     /* AMERICANO****************************************************************************/
 
@@ -66,6 +66,7 @@ let ShowData = function (){
         console.log("*****************************");
         console.log("------Total------");
         console.log("$ "+ Total); 
+        console.log("##################################");
 
         document.getElementById("info0").innerHTML=  "Cantidad de tela= " + First_redondeado.toFixed(4) * 1 + "Mts";
         document.getElementById("info1").innerHTML=  "Modelo elegido= " + modelo;
@@ -106,6 +107,7 @@ let ShowData = function (){
         console.log("*****************************");
         console.log("------Total------");
         console.log("$ "+ Total); 
+        console.log("##################################");
 
         document.getElementById("info0").innerHTML=  "Cantidad de tela= " + First_redondeado.toFixed(4) * 2 + "Mts";
         document.getElementById("info1").innerHTML=  "Modelo elegido= " + modelo;
@@ -147,6 +149,7 @@ let ShowData = function (){
         console.log("*****************************");
         console.log("------Total------");
         console.log("$ "+ Total); 
+        console.log("##################################");
 
         document.getElementById("info0").innerHTML=  "Cantidad de tela= " + First_redondeado.toFixed(4) * 2.5 + "Mts";
         document.getElementById("info1").innerHTML=  "Modelo elegido= " + modelo;
@@ -187,6 +190,7 @@ let ShowData = function (){
         console.log("*****************************");
         console.log("------Total------");
         console.log("$ "+ Total); 
+        console.log("##################################");
 
         document.getElementById("info0").innerHTML=  "Cantidad de tela= " + First_redondeado.toFixed(4) * 3 + "Mts";
         document.getElementById("info1").innerHTML=  "Modelo elegido= " + modelo;
@@ -233,6 +237,7 @@ let ShowData = function (){
         console.log("*****************************");
         console.log("------Total------");
         console.log("$ "+ Total); 
+        console.log("##################################");
 
         document.getElementById("info0").innerHTML= "Cantidad de tela= " + First_redondeado.toFixed(4) * 1.5 + "Mts";
         document.getElementById("info1").innerHTML= "Modelo elegido= " + modelo;
@@ -273,6 +278,7 @@ let ShowData = function (){
         console.log("*****************************");
         console.log("------Total------");
         console.log("$ "+ Total); 
+        console.log("##################################");
 
         document.getElementById("info0").innerHTML=  "Cantidad de tela= " + First_redondeado.toFixed(4) * 3 + "Mts";
         document.getElementById("info1").innerHTML=  "Modelo elegido= " + modelo;
@@ -312,6 +318,7 @@ let ShowData = function (){
         console.log("*****************************");
         console.log("------Total------");
         console.log("$ "+ Total); 
+        console.log("##################################");
 
         document.getElementById("info0").innerHTML= "Cantidad de tela= " + First_redondeado.toFixed(4) * 1.5 + "Mts";
         document.getElementById("info1").innerHTML= "Modelo elegido= " + modelo;
@@ -351,6 +358,7 @@ let ShowData = function (){
         console.log("*****************************");
         console.log("------Total------");
         console.log("$ "+ Total); 
+        console.log("##################################");
 
         document.getElementById("info0").innerHTML= "Cantidad de tela= " + First_redondeado.toFixed(4) * 3 + "Mts";
         document.getElementById("info1").innerHTML= "Modelo elegido= " + modelo;
@@ -391,7 +399,7 @@ let ShowData = function (){
         console.log("*****************************");
         console.log("------Total------");
         console.log("$ "+ Total); 
-
+        console.log("##################################");
         document.getElementById("info0").innerHTML= "Cantidad de tela= " + First_redondeado.toFixed(4) * 2.5 + "Mts";
         document.getElementById("info1").innerHTML= "Modelo elegido= " + modelo;
         document.getElementById("info2").innerHTML= "Precio de un solo paño= " + "$" + Third.toFixed(2);
