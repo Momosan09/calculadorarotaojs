@@ -26,82 +26,44 @@
 <br><br>
 
         <p>Modelos:</p>
-<div class="Modelos container">
 
-
-<div class="row">
-
-    <div class="col-6 col-md-4"><!-- Primera columna -->
-
-<div class="row color-tabla-1">
-
-    <label>Americano <input type="radio" name="modelos" id="americano"> </label>
-
-
-</div>
-
-<div class="row color-tabla-2">
-
-
-        <label>Presilla <input type="radio" name="modelos" id="presilla"> </label><!-- *1.5 -->
-        
-
-</div>
-
-<div class="row color-tabla-3">
-
-    <label>Plisado<input type="radio" name="modelos" disabled id="americano"></label> <!-- *3 --> 
-</div>
-
-
-    </div><!-- primera columna -->
-
-
-    <div class="col medio"><!-- segunda columna -->
-
-<div class="row color-tabla-1">
-
-<label>Tablas Chatas<input type="radio" name="modelos" disabled id="presilla"></label><!-- *2.5 -->
-</div>
-
-<div class="row color-tabla-2">
-
-<label>Tablas Chatas <sup>2</sup><input type="radio" name="modelos" disabled id="americano"></label> <!-- *3 --> 
-</div>
-
-<div class="row color-tabla-3">
-    <label for="presilla">Modelo Vanesa con tablas encontradas</label><!-- *2.5 -->
-<label><input type="radio" name="modelos" disabled id="presilla"></label>
-</div>
-
-
-    </div><!-- segunda columna -->
-
-
-    <div class="col ulti"><!-- tercera columna -->
-
-<div class="row color-tabla-1">
-    <label for="presilla">Tablas chatas</label><!-- *2.5 -->
-    <input type="radio" name="modelos" disabled id="presilla">
-</div>
-
-<div class="row color-tabla-2">
-    <label for="presilla">Tablas chatas</label><!-- *2.5 -->
-    <input type="radio" name="modelos" disabled id="presilla"> 
-</div>
-
-<div class="row color-tabla-3">
-    <label for="presilla">Tablas chatas</label><!-- *2.5 -->
-    <input type="radio" name="modelos" disabled id="presilla">
-</div>
-
-
-    </div><!-- tercera columna -->
-       
-</div><!-- end row -->
-
-</div><!-- end container -->
-
+        <div class="container">         
+            <table class="table table-bordered">
+              <thead>
+                <tr class="columnas-estilo">
+                  <th>Col1</th>
+                  <th></th>
+                  <th>Col2</th>
+                  <th></th>
+                  <th>Col3</th>
+                  <th></th>
+    
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="input-style">
+                  <td class="table-active">Americano <sup>1</sup> <td class="input-style table-active"><input class="tabla-modelos" type="radio" name="modelos" id="americano"></td></td>
+                  <td class="table-active">Presilla <td class="input-style table-active"><input class="tabla-modelos" type="radio" name="modelos" id="presilla"></td></td>
+                  <td class="table-active">john@example.com <td class="input-style table-active"><input class="tabla-modelos" type="radio" name="modelos" id="X"></td></td>
+                </tr>
+                <tr>
+                  <td class="table-light">Americano  <sup>2</sup> <td class="input-style table-light"><input class="tabla-modelos" type="radio" name="modelos" id="americano2"></td></td>
+                  <td class="table-light">Plisado <td class="input-style table-light"><input class="tabla-modelos" type="radio" name="modelos" id="plisado"></td></td>
+                  <td class="table-light">mary@example.com <td class="input-style table-light"><input class="tabla-modelos" type="radio"></td></td>
+                </tr>
+                <tr>
+                  <td class="table-active">Americano <sup>2.5</sup> <td class="input-style table-active"><input class="tabla-modelos" type="radio" name="modelos" id="americano2_5"></td></td>
+                  <td class="table-active">Vanesa Simple <td class="input-style table-active"><input class="tabla-modelos" type="radio" name="modelos" id="vanesa"></td></td>
+                  <td class="table-active">july@example.com <td class="input-style table-active"><input class="tabla-modelos" type="radio"></td></td>
+                </tr>
+                <tr>
+                    <td class="table-light">Americano <sup>3</sup><td class="input-style table-light"><input class="tabla-modelos" type="radio" name="modelos" id="americano3"></td></td>
+                    <td class="table-light">Moe <td class="input-style table-light"><input class="tabla-modelos" type="radio"></td></td>
+                    <td class="table-light">mary@example.com <td class="input-style table-light"><input class="tabla-modelos" type="radio"></td></td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
        
  
 
@@ -168,7 +130,7 @@
           </thead>
           <tbody>
             <tr class="input-style">
-              <td class="table-active">Americano1 <td class="input-style table-active"><input class="tabla-modelos " type="radio"></td></td>
+              <td class="table-active">Americano1 <td class="input-style table-active"><input class="tabla-modelos" type="radio" name="modelos" id="americano"></td></td>
               <td class="table-active">Doe <td class="input-style table-active"><input class="tabla-modelos " type="radio"></td></td>
               <td class="table-active">john@example.com <td class="input-style table-active"><input class="tabla-modelos " type="radio"></td></td>
             </tr>
