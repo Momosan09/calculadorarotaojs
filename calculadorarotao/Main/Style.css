@@ -99,12 +99,20 @@ input{
 @media (max-width: 700px){
 
 .Formulario{
-    zoom: 1;
+    zoom: 0.8;
 /*     display: flex;
     justify-content: center; */
 
-
 }
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    zoom: 0.8;
+}
+
+
 
 }
 
