@@ -12,7 +12,7 @@ let ShowData = function (){
 
     let Last = parseInt( document.getElementById("last").value);
 
-    let Costurera;
+/*     let Costurera; */
 
     let Total
 
@@ -31,13 +31,19 @@ let ShowData = function (){
 
     let M4 = document.getElementById("vanesa").checked;
 
+    let M5 = document.getElementById("vanesa_doble").checked;
+
+    let M6 = document.getElementById("tablas_chatas").checked;
+
+
+
     /* AMERICANO****************************************************************************/
 
     if(AM1 ==  true){
-        let modelo = "Americano 1";
+        let modelo = "Americano 1";                 /* AMERICANO TIPO 1 */
         let tela_total = First_redondeado * 1;
         Four_simple = tela_total/1.5;               //Four es el numero de paños
-        Four = Math.ceil( (tela_total/1.5));
+        Four =  Math.ceil((tela_total/1.5));
         let Costurera = Four * Third;
         Total = (tela_total * Last) + Costurera;
 
@@ -73,7 +79,7 @@ let ShowData = function (){
 
     }
 
-    if(AM2 ==  true){
+    if(AM2 ==  true){                           /* AMERICANO TIPO 2 */
         let modelo = "Americano 2";
         let tela_total = First_redondeado * 2;
         Four_simple = tela_total/1.5;               //Four es el numero de paños
@@ -114,7 +120,7 @@ let ShowData = function (){
     }
 
 
-    if(AM2_5 ==  true){
+    if(AM2_5 ==  true){                     /* AMERICANO TIPO 2.5 */
         let modelo = "Americano 2.5";
         let tela_total = First_redondeado * 2.5;
         Four_simple = tela_total/1.5;               //Four es el numero de paños
@@ -154,7 +160,7 @@ let ShowData = function (){
 
     }
 
-    if(AM3 ==  true){
+    if(AM3 ==  true){                    /* AMERICANO TIPO 3 */
         let modelo = "Americano 3";
         let tela_total = First_redondeado * 3;
         Four_simple = tela_total/1.5;               //Four es el numero de paños
@@ -230,13 +236,13 @@ let ShowData = function (){
         console.log("------Total------");
         console.log("$ "+ Total); 
 
-        document.getElementById("info0").innerHTML= "Cantidad de tela= " + First_redondeado * 1.5 + "Mts";
+        document.getElementById("info0").innerHTML= "Cantidad de tela= " + First_redondeado.toFixed(4) * 1.5 + "Mts";
         document.getElementById("info1").innerHTML= "Modelo elegido= " + modelo;
-        document.getElementById("info2").innerHTML= "Precio de un solo paño= " + "$" + Third;
+        document.getElementById("info2").innerHTML= "Precio de un solo paño= " + "$" + Third.toFixed(2);
         document.getElementById("info3").innerHTML=  "Numero de paños redondeado= " + Four+ " Numero de paños (Neto)= " + Four_simple.toFixed(2); 
         document.getElementById("info4").innerHTML= "Confeccion = " + "$" + Costurera;
         document.getElementById("info5").innerHTML= "Valor de la tela ingresado= " +"$" + Last;
-        document.getElementById("info6").innerHTML= "Total= " + "$" + Total;
+        document.getElementById("info6").innerHTML= "Total= " + "$" + Total.toFixed(2);
 
     }
 
@@ -253,7 +259,7 @@ let ShowData = function (){
         console.log( First_redondeado * 3 + "Mts");
         console.log("*****************************");
         console.log("--------Modelo elegido-------");
-        console.log(modelo + "= " + AM3);
+        console.log(modelo + "= " + M3);
         console.log("*****************************");
         console.log("----Precio de solo 1 paño----");
         console.log("$"+Third);
@@ -292,7 +298,7 @@ let ShowData = function (){
         console.log( First_redondeado * 1.5 + "Mts");
         console.log("*****************************");
         console.log("--------Modelo elegido-------");
-        console.log(modelo + "= " + M2);
+        console.log(modelo + "= " + M4);
         console.log("*****************************");
         console.log("----Precio de solo 1 paño----");
         console.log("$"+Third);
@@ -309,18 +315,94 @@ let ShowData = function (){
         console.log("------Total------");
         console.log("$ "+ Total); 
 
-        document.getElementById("info0").innerHTML= "Cantidad de tela= " + First_redondeado * 1.5 + "Mts";
+        document.getElementById("info0").innerHTML= "Cantidad de tela= " + First_redondeado.toFixed(4) * 1.5 + "Mts";
         document.getElementById("info1").innerHTML= "Modelo elegido= " + modelo;
-        document.getElementById("info2").innerHTML= "Precio de un solo paño= " + "$" + Third;
+        document.getElementById("info2").innerHTML= "Precio de un solo paño= " + "$" + Third.toFixed(2);
         document.getElementById("info3").innerHTML=  "Numero de paños redondeado= " + Four+ " Numero de paños (Neto)= " + Four_simple.toFixed(2); 
         document.getElementById("info4").innerHTML= "Confeccion = " + "$" + Costurera;
         document.getElementById("info5").innerHTML= "Valor de la tela ingresado= " +"$" + Last;
-        document.getElementById("info6").innerHTML= "Total= " + "$" + Total;
+        document.getElementById("info6").innerHTML= "Total= " + "$" + Total.toFixed(2);
+
+    }
+
+    if(M5 == true){              /* VANESA */
+        let modelo = "Vanesa Doble";
+        let tela_total = First_redondeado * 3;
+        Four_simple = tela_total/1.5;               //Four es el numero de paños
+        Four = Math.ceil( (tela_total/1.5));
+        let Costurera = Four * Third;
+        Total = (tela_total * Last) + Costurera;
+
+        console.log("------Cantidad de tela------");
+        console.log( First_redondeado * 3 + "Mts");
+        console.log("*****************************");
+        console.log("--------Modelo elegido-------");
+        console.log(modelo + "= " + M5);
+        console.log("*****************************");
+        console.log("----Precio de solo 1 paño----");
+        console.log("$"+Third);
+        console.log("-----Numero de los paños-----");
+        console.log("Neto= "+Four_simple);
+        console.log("Redondeado= "+Four);
+        console.log("*****************************");
+        console.log("------Confeccion------");
+        console.log("$" + Costurera);
+        console.log("*****************************");
+        console.log("------Precio de la tela------");
+        console.log("$" + Last);
+        console.log("*****************************");
+        console.log("------Total------");
+        console.log("$ "+ Total); 
+
+        document.getElementById("info0").innerHTML= "Cantidad de tela= " + First_redondeado.toFixed(4) * 3 + "Mts";
+        document.getElementById("info1").innerHTML= "Modelo elegido= " + modelo;
+        document.getElementById("info2").innerHTML= "Precio de un solo paño= " + "$" + Third.toFixed(2);
+        document.getElementById("info3").innerHTML=  "Numero de paños redondeado= " + Four+ " Numero de paños (Neto)= " + Four_simple.toFixed(2); 
+        document.getElementById("info4").innerHTML= "Confeccion = " + "$" + Costurera;
+        document.getElementById("info5").innerHTML= "Valor de la tela ingresado= " +"$" + Last;
+        document.getElementById("info6").innerHTML= "Total= " + "$" + Total.toFixed(2);
 
     }
 
 
+    if(M6 == true){              /* TABLAS CHATAS */
+        let modelo = "Tablas Chatas";
+        let tela_total = First_redondeado * 2.5;
+        Four_simple = tela_total/1.5;               //Four es el numero de paños
+        Four = Math.ceil( (tela_total/1.5));
+        let Costurera = Four * Third;
+        Total = (tela_total * Last) + Costurera;
 
+        console.log("------Cantidad de tela------");
+        console.log( First_redondeado * 2.5 + "Mts");
+        console.log("*****************************");
+        console.log("--------Modelo elegido-------");
+        console.log(modelo + "= " + M6);
+        console.log("*****************************");
+        console.log("----Precio de solo 1 paño----");
+        console.log("$"+Third);
+        console.log("-----Numero de los paños-----");
+        console.log("Neto= "+Four_simple);
+        console.log("Redondeado= "+Four);
+        console.log("*****************************");
+        console.log("------Confeccion------");
+        console.log("$" + Costurera);
+        console.log("*****************************");
+        console.log("------Precio de la tela------");
+        console.log("$" + Last);
+        console.log("*****************************");
+        console.log("------Total------");
+        console.log("$ "+ Total); 
+
+        document.getElementById("info0").innerHTML= "Cantidad de tela= " + First_redondeado.toFixed(4) * 2.5 + "Mts";
+        document.getElementById("info1").innerHTML= "Modelo elegido= " + modelo;
+        document.getElementById("info2").innerHTML= "Precio de un solo paño= " + "$" + Third.toFixed(2);
+        document.getElementById("info3").innerHTML=  "Numero de paños redondeado= " + Four+ " Numero de paños (Neto)= " + Four_simple.toFixed(2); 
+        document.getElementById("info4").innerHTML= "Confeccion = " + "$" + Costurera;
+        document.getElementById("info5").innerHTML= "Valor de la tela ingresado= " +"$" + Last;
+        document.getElementById("info6").innerHTML= "Total= " + "$" + Total.toFixed(2);
+
+    }
 
 
 
