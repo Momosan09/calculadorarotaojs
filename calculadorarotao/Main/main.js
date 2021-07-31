@@ -33,9 +33,7 @@ let ShowData = function (){
 
     let M5 = document.getElementById("vanesa_doble").checked;
 
-    let M6 = document.getElementById("tablas_chatas").checked;
-
-
+    let M6 = document.getElementById("tablas_chatas").checkeround
 
     /* AMERICANO****************************************************************************/
 
@@ -43,7 +41,7 @@ let ShowData = function (){
         let modelo = "Americano 1";                 /* AMERICANO TIPO 1 */
         let tela_total = First_redondeado * 1;
         Four_simple = tela_total/1.5;               //Four es el numero de paños
-        Four =  Math.ceil((tela_total/1.5));
+        Four =  Math.round((tela_total/1.5));
         let Costurera = Four * Third;
         Total = (tela_total * Last) + Costurera;
 
@@ -83,7 +81,7 @@ let ShowData = function (){
         let modelo = "Americano 2";
         let tela_total = First_redondeado * 2;
         Four_simple = tela_total/1.5;               //Four es el numero de paños
-        Four = Math.ceil( (tela_total/1.5));
+        Four = Math.round( (tela_total/1.5));
         let Costurera = Four * Third;
         Total = (tela_total * Last) + Costurera;
 
@@ -124,7 +122,7 @@ let ShowData = function (){
         let modelo = "Americano 2.5";
         let tela_total = First_redondeado * 2.5;
         Four_simple = tela_total/1.5;               //Four es el numero de paños
-        Four = Math.ceil( (tela_total/1.5));
+        Four = Math.round( (tela_total/1.5));
         let Costurera = Four * Third;
         Total = (tela_total * Last) + Costurera;
 
@@ -164,7 +162,7 @@ let ShowData = function (){
         let modelo = "Americano 3";
         let tela_total = First_redondeado * 3;
         Four_simple = tela_total/1.5;               //Four es el numero de paños
-        Four = Math.ceil( (tela_total/1.5));
+        Four = Math.round( (tela_total/1.5));
         let Costurera = Four * Third;
         Total = (tela_total * Last) + Costurera;
 
@@ -211,7 +209,7 @@ let ShowData = function (){
         let modelo = "Presilla";
         let tela_total = First_redondeado * 1.5;
         Four_simple = tela_total/1.5;               //Four es el numero de paños
-        Four = Math.ceil( (tela_total/1.5));
+        Four = Math.round( (tela_total/1.5));
         let Costurera = Four * Third;
         Total = (tela_total * Last) + Costurera;
 
@@ -250,7 +248,7 @@ let ShowData = function (){
         let modelo = "Plisado";
         let tela_total = First_redondeado * 3;
         Four_simple = tela_total/1.5;               //Four es el numero de paños
-        Four = Math.ceil( (tela_total/1.5));
+        Four = Math.round( (tela_total/1.5));
         let Costurera = Four * Third;
         Total = (tela_total * Last) + Costurera;
 
@@ -290,7 +288,7 @@ let ShowData = function (){
         let modelo = "Vanesa Simple";
         let tela_total = First_redondeado * 1.5;
         Four_simple = tela_total/1.5;               //Four es el numero de paños
-        Four = Math.ceil( (tela_total/1.5));
+        Four = Math.round( (tela_total/1.5));
         let Costurera = Four * Third;
         Total = (tela_total * Last) + Costurera;
 
@@ -329,7 +327,7 @@ let ShowData = function (){
         let modelo = "Vanesa Doble";
         let tela_total = First_redondeado * 3;
         Four_simple = tela_total/1.5;               //Four es el numero de paños
-        Four = Math.ceil( (tela_total/1.5));
+        Four = Math.round( (tela_total/1.5));
         let Costurera = Four * Third;
         Total = (tela_total * Last) + Costurera;
 
@@ -369,7 +367,7 @@ let ShowData = function (){
         let modelo = "Tablas Chatas";
         let tela_total = First_redondeado * 2.5;
         Four_simple = tela_total/1.5;               //Four es el numero de paños
-        Four = Math.ceil( (tela_total/1.5));
+        Four = Math.round( (tela_total/1.5));
         let Costurera = Four * Third;
         Total = (tela_total * Last) + Costurera;
 
