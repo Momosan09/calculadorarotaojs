@@ -96,7 +96,24 @@ input{
 .link-nav{
     display: flex;
     justify-content: space-between;
+
+    background-color: rgb(255, 101, 83);
 }
+
+.nav-boton{
+    padding: 10px;
+    border: rgb(255, 255, 255) solid 1px;
+    border-radius: 10px;
+    color: black;
+    text-decoration: none;
+    transition: background-color ease-in 1500ms;
+}
+
+.nav-boton:hover{
+    color: black;
+    background-color: rgb(117, 13, 236);
+}
+
 
 img{
     padding:10px;
