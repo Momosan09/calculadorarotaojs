@@ -31,21 +31,26 @@
 
 <div class="row">
 
-    <div class="col"><!-- Primera columna -->
+    <div class="col-6 col-md-4"><!-- Primera columna -->
 
 <div class="row color-tabla-1">
-    <label for="americano">Americano</label>
-    <input type="radio" name="modelos" id="americano">
+
+    <label>Americano <input type="radio" name="modelos" id="americano"> </label>
+
+
 </div>
 
 <div class="row color-tabla-2">
-    <label for="presilla">Presilla</label><!-- *1.5 -->
-    <input type="radio" name="modelos" id="presilla"> 
+
+
+        <label>Presilla <input type="radio" name="modelos" id="presilla"> </label><!-- *1.5 -->
+        
+
 </div>
 
 <div class="row color-tabla-3">
-    <label for="americano">Plisado</label> <!-- *3 -->
-    <input type="radio" name="modelos" disabled id="americano">  
+
+    <label>Plisado<input type="radio" name="modelos" disabled id="americano"></label> <!-- *3 --> 
 </div>
 
 
@@ -55,18 +60,18 @@
     <div class="col medio"><!-- segunda columna -->
 
 <div class="row color-tabla-1">
-    <label for="presilla">Tablas chatas</label><!-- *2.5 -->
-    <input type="radio" name="modelos" disabled id="presilla">
+
+<label>Tablas Chatas<input type="radio" name="modelos" disabled id="presilla"></label><!-- *2.5 -->
 </div>
 
 <div class="row color-tabla-2">
-    <label for="americano">Tablas doble chatas</label> <!-- *3 -->
-    <input type="radio" name="modelos" disabled id="americano">  
+
+<label>Tablas Chatas <sup>2</sup><input type="radio" name="modelos" disabled id="americano"></label> <!-- *3 --> 
 </div>
 
 <div class="row color-tabla-3">
     <label for="presilla">Modelo Vanesa con tablas encontradas</label><!-- *2.5 -->
-    <input type="radio" name="modelos" disabled id="presilla">
+<label><input type="radio" name="modelos" disabled id="presilla"></label>
 </div>
 
 
@@ -148,5 +153,39 @@
     <script src="/main.js"> </script>
 
 
+    <div class="container">         
+        <table class="table table-bordered">
+          <thead>
+            <tr class="columnas-estilo">
+              <th>Col1</th>
+              <th></th>
+              <th>Col2</th>
+              <th></th>
+              <th>Col3</th>
+              <th></th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="input-style">
+              <td class="table-active">Americano1 <td class="input-style table-active"><input class="tabla-modelos " type="radio"></td></td>
+              <td class="table-active">Doe <td class="input-style table-active"><input class="tabla-modelos " type="radio"></td></td>
+              <td class="table-active">john@example.com <td class="input-style table-active"><input class="tabla-modelos " type="radio"></td></td>
+            </tr>
+            <tr>
+              <td class="table-light">Mary <td class="input-style table-light"><input class="tabla-modelos " type="radio"></td></td>
+              <td class="table-light">Moe <td class="input-style table-light"><input class="tabla-modelos" type="radio"></td></td>
+              <td class="table-light">mary@example.com <td class="input-style table-light"><input class="tabla-modelos" type="radio"></td></td>
+            </tr>
+            <tr>
+              <td class="table-active">July <td class="input-style table-active"><input class="tabla-modelos" type="radio"></td></td>
+              <td class="table-active">Dooley <td class="input-style table-active"><input class="tabla-modelos" type="radio"></td></td>
+              <td class="table-active">july@example.com <td class="input-style table-active"><input class="tabla-modelos" type="radio"></td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    
 </body>
 </html>
