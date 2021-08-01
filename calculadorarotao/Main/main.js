@@ -1,4 +1,6 @@
-let ShowData = function (){
+let ShowData = function (){        /* Busca el boton */
+
+/* Declaracion de variables **************************************************************/
 
     let First = parseInt( document.getElementById("first").value);
 
@@ -12,11 +14,10 @@ let ShowData = function (){
 
     let Last = parseInt( document.getElementById("last").value);
 
-/*     let Costurera; */
 
     let Total
 
-    /* Modelos */
+    /* Modelos ***************************************************************/
     let AM1 = document.getElementById("americano").checked;
 
     let AM2 = document.getElementById("americano2").checked;
@@ -36,8 +37,11 @@ let ShowData = function (){
     let M6 = document.getElementById("tablas_chatas").checked;
 
     let M7 = document.getElementById("tablas_chatas-doble").checked;
+    /* Modelos ***************************************************************/
 
-    
+/* Declaracion de variables **************************************************************/
+
+
   
     /* AMERICANO****************************************************************************/
 
@@ -458,3 +462,4 @@ let ShowData = function (){
 
 }
 
+/* Objetivo, hacer mas corto el programa jeje */

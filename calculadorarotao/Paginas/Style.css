@@ -93,17 +93,82 @@ input{
 
 }
 
+.link-nav{
+    display: flex;
+    justify-content: space-between;
 
+    box-shadow: 2px 2px 1px 1px rgba(235, 125, 113, 0.76);
+    background-color: rgb(255, 101, 83);
+    
+}
+
+.nav-boton{
+    padding: 10px;
+    border: rgb(255, 255, 255) solid 1px;
+    border-radius: 10px;
+    color: black;
+    text-decoration: none;
+    transition: background-color ease-in 1500ms;
+    transition: box-shadow ease-in 300ms;
+    box-shadow: 2px 2px 1px 1px gray;
+
+}
+
+.nav-boton:hover{
+    color: black;
+    background-color: rgb(117, 13, 236);
+    box-shadow: -2px -2px 1px 1px gray;
+
+
+}
+
+.activo{
+    background-color: rgb(117, 13, 236);
+}
+
+img{
+    padding:10px;
+}
 
 
 @media (max-width: 700px){
 
 .Formulario{
-    zoom: 1;
+    zoom: 0.8;
 /*     display: flex;
     justify-content: center; */
 
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    zoom: 0.8;
+}
+
+
 
 }
 
+
+
+/* Modelos */
+
+.tabla-modelos{
+    width: 20px;
 }
+
+.columnas-estilo{
+    color: whitesmoke;
+    background-color: rgb(117, 13, 236);
+    
+}
+
+
+.input-style{
+    width: 20px;
+
+
+}
+

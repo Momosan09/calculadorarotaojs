@@ -8,13 +8,16 @@
     <title>Cortinados</title>
 </head>
 <body>
-
+<!-- NAV BAR-------------------------------------------------------------------------------------------------------------------------------------->
 <nav class="navbar navbar-light   link-nav"><a href="https://rotapol.netlify.app"> <img src="/img/rotapol logo.png" alt="Logo"></a>
-     <a class="nav-boton" href="https://rotapolcalculadora.netlify.app">Cortinados</a> 
+     <a class="nav-boton activo" href="https://rotapolcalculadora.netlify.app">Cortinados</a> 
      <a class="nav-boton" href="https://rotapolcalculadora2.netlify.app/">Sistemas</a>
     </nav>
 
+<!-- NAV BAR-------------------------------------------------------------------------------------------------------------------------------------->
 
+
+<!-- Empieza formulario-------------------------------------------------------------------------------------------------------------------------------------->
 
     <section class="Formulario">
 
@@ -22,15 +25,14 @@
 
     <form action="" class="formulario">
 
+        <!-- Pide la medida de la ventana (First)---------------------------------------------->
         <label for="first"> Ancho del ventanal <span><a href="#" title="La medida de la tela tiene que ser en centimetros (Metros * 100 = cm)">(?)</a> </span></label> <br><br> <!-- medida de la tela --> <!-- sin el "#" en el href, se refresca el formulario y pierde los valores -->
         <label class="medida"><input type="number" min="1" name="Medida_tela" id="first" placeholder="Ancho en cm">cm</label>
+        <!-- Pide la medida de la ventana (First)---------------------------------------------->
 
 
-            
-
-</button>
-
-<!-- Tipos de modelo -->
+        
+<!-- Tipos de modelo------------------------------------------------------------------------>
 <br><br>
 
         <p>Modelos:</p>
@@ -73,12 +75,18 @@
             </table>
           </div>
        
- 
+<!-- Tipos de modelo------------------------------------------------------------------------>
 
-        <!-- precio de paños -->
+
+<!-- precio de paños ------------------------------------------------------------------------->
         <label for="Precio_paños">Precio de un solo paño</label> <span> <a href="#"  title="Ingresar el precio de un solo paño, luego la cantidad de paños.">(?)</a> </span> <br>
         <label class="pesos">$<input type="number" min="1" name="Precio_paños" id="third" placeholder="Precio de un paño" ></label>
-        
+<!-- precio de paños ------------------------------------------------------------------------->
+
+
+
+
+
         <!-- Numero de paños -->
       <!--   <label for="four">Numero de paños</label>
         <select id="four">
@@ -90,15 +98,31 @@
             <option value="6">6</option>
 
         </select> -->
+
+
+
+
         <br><br> 
+
+<!-- Precio de la tela--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        
         <label for="Precio_tela">Precio de la tela</label><br>
         <label class="pesos">$<input type="number" min="1" name="Precio_tela" id="last" placeholder="Precio de la tela"></label>
+        
+<!-- Precio de la tela--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+        
+        
         <br><br>
+<!-- Botones y final--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
         <a href="#Down"> <button type="button" onclick="ShowData()" class="btn btn-primary" > Calcular </button></a>
         <input type="reset" value="Borrar" class="btn btn-outline-danger" >
 <a href="" title="NaN hace refernecia a que algun campo no fue rellenado y por lo tanto no es un numero, para resolver esto, revisar el formulario y completarlo">(¿NaN?)</a>
-<section class="Adentro">
 
+
+<section class="Adentro">
+<!-- se inyecta con JS -->
     <div class="tabla1" id="info0"></div>
     <div class="tabla" id="info1"></div>
     <div class="tabla1" id="info2"></div>
@@ -107,12 +131,13 @@
     <div class="tabla" id="info5"></div>
     <div class="tabla0" id="info6"></div>
     <div class="Para_NaN" id="if_NaN"></div>
-<a name="Down" id="Down"></a>
-</div>  
-
+    <a name="Down" id="Down"></a></div>  
+<!-- se inyecta con JS -->
 </section>
-
     </form>
+<!-- Botones y final--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<!-- termina formulario-------------------------------------------------------------------------------------------------------------------------------------->
 
 
     <a href="https://rotapolcalculadora2.netlify.app/">SIGUIENTE</a>
