@@ -97,7 +97,9 @@ input{
     display: flex;
     justify-content: space-between;
 
+    box-shadow: 2px 2px 1px 1px rgba(235, 125, 113, 0.76);
     background-color: rgb(255, 101, 83);
+    
 }
 
 .nav-boton{
@@ -107,11 +109,17 @@ input{
     color: black;
     text-decoration: none;
     transition: background-color ease-in 1500ms;
+    transition: box-shadow ease-in 300ms;
+    box-shadow: 2px 2px 1px 1px gray;
+
 }
 
 .nav-boton:hover{
     color: black;
     background-color: rgb(117, 13, 236);
+    box-shadow: -2px -2px 1px 1px gray;
+
+
 }
 
 
