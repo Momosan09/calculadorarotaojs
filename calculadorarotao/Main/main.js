@@ -6,6 +6,8 @@ let ShowData = function (){        /* Busca el boton */
 
     let First_redondeado = First / 100;
 
+    Math.trunc(First_redondeado);
+
     let Third = parseInt( document.getElementById("third").value);
 
     let Four_simple;
@@ -41,19 +43,23 @@ let ShowData = function (){        /* Busca el boton */
 
 /* Declaracion de variables **************************************************************/
 
+/* function A(){
+    console.log("sape");
+} */
 
-  
+/* A(); */
     /* AMERICANO****************************************************************************/
 
     if(AM1 ==  true){
         let modelo = "Americano 1";                 /* AMERICANO TIPO 1 */
         let tela_total = First_redondeado * 1;
         Four_simple = tela_total/1.5;               //Four es el numero de paños
-        Four =  Math.round((tela_total/1.5));
+        Four =  Math.round((tela_total/1.5));   
         let Costurera = Four * Third;
         Total = (tela_total * Last) + Costurera;
 
-        
+                                                                                             /* switch */
+
         console.log("------Cantidad de tela------");
         console.log( First_redondeado * 1 + "Mts");
         console.log("*****************************");
