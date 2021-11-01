@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css"> 
+    <link rel="stylesheet" href="Style.css">
+    <title>Cortinados</title>
+</head>
+<body>
+<!-- NAV BAR-------------------------------------------------------------------------------------------------------------------------------------->
+<nav class="navbar navbar-light   link-nav"><a href="https://rotapol.netlify.app"> <img src="/img/rotapol logo.png" alt="Logo"></a>
+    <a class="nav-boton activo" href="https://rotapolcalculadora.netlify.app">Cortinados</a> 
+    <a class="nav-boton" href="/Paginas/index.html">Sistemas</a>
+    </nav>
+
+<!-- NAV BAR-------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!-- Empieza formulario-------------------------------------------------------------------------------------------------------------------------------------->
+
+    <section class="Formulario">
+
+    <div class="container-formulario">  
+
+    <form action="" class="formulario">
+
+        <!-- Pide la medida de la ventana (First)---------------------------------------------->
+        <label for="first"> Ancho del ventanal <span><a href="#" title="La medida de la tela tiene que ser en centimetros (Metros * 100 = cm)">(?)</a> </span></label> <br><br> <!-- medida de la tela --> <!-- sin el "#" en el href, se refresca el formulario y pierde los valores -->
+        <label class="medida"><input type="number" min="1" name="Medida_tela" id="first" placeholder="Ancho en cm">cm</label>
+        <!-- Pide la medida de la ventana (First)---------------------------------------------->
+
+
+        
+<!-- Tipos de modelo------------------------------------------------------------------------>
+<br><br>
+
+        <p>Modelos:</p>
+
+        <div class="container">         
+            <table class="table table-bordered">
+              <thead>
+                <tr class="columnas-estilo">
+                  <th>Col1</th>
+                  <th></th>
+                  <th>Col2</th>
+                  <th></th>
+                  <th>Col3</th>
+                  <th></th>
+    
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="input-style">
+                  <td class="table-active">Americano <sup>1</sup> <td class="input-style table-active"><input class="tabla-modelos" type="radio" name="modelos" id="americano"></td></td>
+                  <td class="table-active">Presilla <td class="input-style table-active"><input class="tabla-modelos" type="radio" name="modelos" id="presilla"></td></td>
+                  <td class="table-active">Tablas Chatas <td class="input-style table-active"><input class="tabla-modelos" type="radio" name="modelos" id="tablas_chatas"></td></td>
+                </tr>
+                <tr>
+                  <td class="table-light">Americano  <sup>2</sup> <td class="input-style table-light"><input class="tabla-modelos" type="radio" name="modelos" id="americano2"></td></td>
+                  <td class="table-light">Plisado <td class="input-style table-light"><input class="tabla-modelos" type="radio" name="modelos" id="plisado"></td></td>
+                  <td class="table-light">Tablas Doble Chatas <td class="input-style table-light"><input class="tabla-modelos" type="radio" name="modelos" id="tablas_chatas-doble"></td></td>
+                </tr>
+                <tr>
+                  <td class="table-active">Americano <sup>2.5</sup> <td class="input-style table-active"><input class="tabla-modelos" type="radio" name="modelos" id="americano2_5"></td></td>
+                  <td class="table-active">Vanesa Simple <td class="input-style table-active"><input class="tabla-modelos" type="radio" name="modelos" id="vanesa"></td></td>
+                  <td class="table-active">XXXXXXXX <td class="input-style table-active"><input class="tabla-modelos" disabled type="radio"></td></td>
+                </tr>
+                <tr>
+                    <td class="table-light">Americano <sup>3</sup><td class="input-style table-light"><input class="tabla-modelos" type="radio" name="modelos" id="americano3"></td></td>
+                    <td class="table-light">Vanesa Doble<td class="input-style table-light"><input class="tabla-modelos" type="radio" name="modelos" id="vanesa_doble"></td></td>
+                    <td class="table-light">XXXXXXXX<td class="input-style table-light"><input class="tabla-modelos" disabled type="radio"></td></td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+       
+<!-- Tipos de modelo------------------------------------------------------------------------>
+
+
+<!-- precio de paños ------------------------------------------------------------------------->
+        <label for="Precio_paños">Precio de un solo paño</label> <span> <a href="#"  title="Ingresar el precio de un solo paño, luego la cantidad de paños.">(?)</a> </span> <br>
+        <label class="pesos">$<input type="number" min="1" name="Precio_paños" id="third" placeholder="Precio de un paño" ></label>
+<!-- precio de paños ------------------------------------------------------------------------->
+
+
+
+
+
+        <!-- Numero de paños -->
+      <!--   <label for="four">Numero de paños</label>
+        <select id="four">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+
+        </select> -->
+
+
+
+
+        <br><br> 
+
+<!-- Precio de la tela--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        
+        <label for="Precio_tela">Precio de la tela</label><br>
+        <label class="pesos">$<input type="number" min="1" name="Precio_tela" id="last" placeholder="Precio de la tela"></label>
+        
+<!-- Precio de la tela--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <br><br>
+<!-- Botones y final--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <a href="#Down"> <button type="button" onclick="ShowData()" class="btn btn-primary" > Calcular </button></a>
+        <input type="reset" value="Borrar" class="btn btn-outline-danger" >
+<a href="" title="NaN: Falto rellenar alguna parte del formulario ">(¿NaN?)</a>
+
+<!-- NO ANDA EL SHOWDATA NOSE PORQUE -->
+
+
+<section class="Adentro">
+<!-- se inyecta con JS -->
+    <div class="tabla1" id="info0"></div>
+    <div class="tabla" id="info1"></div>
+    <div class="tabla1" id="info2"></div>
+    <div class="tabla" id="info3"></div>
+    <div class="tabla1" id="info4"></div>
+    <div class="tabla" id="info5"></div>
+    <div class="tabla0" id="info6"></div>
+    <div class="Para_NaN" id="if_NaN"></div>
+    <a name="Down" id="Down"></a></div>  
+<!-- se inyecta con JS -->
+</section>
+    </form>
+<!-- Botones y final--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<!-- termina formulario-------------------------------------------------------------------------------------------------------------------------------------->
+
+
+    <a href="https://rotapolcalculadora2.netlify.app/">SIGUIENTE</a>
+</section>
+
+</div>
+
+    <script src="main.js"> </script>
+
+
+</body>
+</html>
