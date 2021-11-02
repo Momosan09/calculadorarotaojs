@@ -54,11 +54,11 @@ function suma(a){
 
 function Imprime (){
 
-    document.getElementById("info0").innerHTML=  "Cantidad de tela= " + tela_total.toFixed(4) + "Mts";
+    document.getElementById("info0").innerHTML=  "Cantidad de tela= " + tela_total.toFixed(2) + "Mts";
     document.getElementById("info1").innerHTML=  "Modelo elegido= " + c;
     document.getElementById("info2").innerHTML=  "Precio de un solo paño= " + "$" + Third.toFixed(2);
     document.getElementById("info3").innerHTML=  " Numero de paños (Neto)= " + Four_simple.toFixed(2); 
-    document.getElementById("info4").innerHTML=  "Confeccion = " + "$" + Costurera;
+    document.getElementById("info4").innerHTML=  "Confeccion = " + "$" + Costurera.toFixed(2);
     document.getElementById("info5").innerHTML=  "Valor de la tela ingresado= " +"$" + Last;
     document.getElementById("info6").innerHTML=  "Total= " + "$" + Total.toFixed(2);
 
