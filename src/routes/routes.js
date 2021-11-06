@@ -3,10 +3,9 @@ const router = express.Router();
 
 const Bill = require("../models/Bill");
 
-router.get("/", async (req, res) =>{
+router.get("/", async (req, res) =>{        /*Si hay algun error seguro es entre Bill, Bills, bill y esos*/ 
 
     const Bills = await Bill.find();    //espera a que llegen los resultados y los guarda en la constante
-    console.log(Bills);
     res.json(Bills);
 });
                                                         //Para guardar las facturas
@@ -16,6 +15,12 @@ router.post("/", async(req, res) => {   //terminar *1
     await bill.save();                  //await espera a que termine y dsps hace
     res.json({status: "Bill saved"});
 });
+                                                        //Pedir una unica factura
+router.get("/:id", async(req,res)=>{
+    const Bill = Bill.findByID(req.params.id);
+    res.json(Bill);
+})
+
                                                         //Para actualizar las facturas
 
 router.put("/:id", async(req, res)=>{
@@ -31,5 +36,7 @@ router.delete("/:id", async(req, res) => {
     await Bill.findByIdAndRemove(req.params.id);
     res.json({status: "Factura eliminada"});
 });
+
+
 
 module.exports = router;
